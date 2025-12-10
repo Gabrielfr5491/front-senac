@@ -40,6 +40,7 @@ public class PetshopFX extends Application {
 
         // tenta carregar css (se não encontrar, só usa estilo padrão)
         try {
+            //link css
             scene.getStylesheets().add(
                     getClass().getResource("petshop.css").toExternalForm()
             );
@@ -440,4 +441,5 @@ public class PetshopFX extends Application {
     public static void main(String[] args) {
         launch();
     }
+
 }
