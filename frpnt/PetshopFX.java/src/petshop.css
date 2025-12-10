@@ -1,0 +1,69 @@
+/* petshop.css - coloque no mesmo package do PetshopFX.class ou em resources e ajuste getResource path */
+
+.root {
+    -fx-font-family: "Segoe UI", system;
+}
+
+.dashboard {
+    -fx-background-color: linear-gradient(to bottom right, #0b1020, #102030);
+}
+
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #091026, #06121a);
+    -fx-padding: 20;
+    -fx-pref-width: 220;
+}
+
+.logo {
+    -fx-text-fill: #fff;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.menu-btn {
+    -fx-background-color: #e67e22;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 12;
+    -fx-background-radius: 8;
+}
+
+.title {
+    -fx-text-fill: #fff;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.subtitle {
+    -fx-text-fill: #cbd5e1;
+}
+
+.input {
+    -fx-background-radius: 8;
+    -fx-padding: 8;
+}
+
+.action-btn {
+    -fx-background-color: linear-gradient(#f59e0b, #d97706);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 8 14;
+}
+
+.login-overlay {
+    -fx-background-color: rgba(0,0,0,0.5);
+    -fx-alignment: center;
+    -fx-padding: 40;
+}
+
+.login-card {
+    -fx-background-color: linear-gradient(#1f2937, #111827);
+    -fx-background-radius: 12;
+    -fx-padding: 24;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 12,0,0,4);
+}
+
+.login-card .login-btn {
+    -fx-background-color: #e67e22;
+}
