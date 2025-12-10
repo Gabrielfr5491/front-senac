@@ -54,7 +54,12 @@ public class PetshopFX extends Application {
         // Layout para o login
         vboxLogin.getChildren().addAll(usuarioField, senhaField, btnLogin);
 
+        // Criando a cena de login
         Scene sceneLogin = new Scene(vboxLogin, 350, 400);
+
+        // Adicionando o arquivo CSS
+        sceneLogin.getStylesheets().add(getClass().getResource("petshop.css").toExternalForm()); // Adiciona o CSS
+
         primaryStage.setTitle("Tela de Login");
         primaryStage.setScene(sceneLogin);
         primaryStage.show();
@@ -93,7 +98,7 @@ public class PetshopFX extends Application {
         Scene scene = new Scene(root, 1040, 720);
         scene.getStylesheets().add(getClass().getResource("petshop.css").toExternalForm());
 
-        primaryStage.setTitle("Petshop Management System");
+        primaryStage.setTitle("Petshop petsec");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -126,7 +131,7 @@ public class PetshopFX extends Application {
 
         atualizarListaClientes(vboxClientes);
 
-        Scene sceneClientes = new Scene(vboxClientes, 400, 300);
+        Scene sceneClientes = new Scene(vboxClientes, 1040, 720);
         stage.setScene(sceneClientes);
         stage.show();
     }
@@ -175,7 +180,7 @@ public class PetshopFX extends Application {
 
         atualizarListaFuncionarios(vboxFuncionarios);
 
-        Scene sceneFuncionarios = new Scene(vboxFuncionarios, 400, 300);
+        Scene sceneFuncionarios = new Scene(vboxFuncionarios, 1040, 720);
         stage.setScene(sceneFuncionarios);
         stage.show();
     }
@@ -233,7 +238,7 @@ public class PetshopFX extends Application {
 
         atualizarListaServicos(vboxServicos);
 
-        Scene sceneServicos = new Scene(vboxServicos, 400, 300);
+        Scene sceneServicos = new Scene(vboxServicos, 1040, 720);
         stage.setScene(sceneServicos);
         stage.show();
     }
@@ -264,7 +269,7 @@ public class PetshopFX extends Application {
         listaAgendamentos.getItems().addAll(getAgendamentos());
 
         vboxAgendamentos.getChildren().addAll(new Label("Agendamentos"), listaAgendamentos);
-        Scene sceneAgendamentos = new Scene(vboxAgendamentos, 400, 300);
+        Scene sceneAgendamentos = new Scene(vboxAgendamentos, 1040, 720);
 
         stage.setScene(sceneAgendamentos);
         stage.show();
@@ -277,7 +282,6 @@ public class PetshopFX extends Application {
         alert.showAndWait();
     }
 
-    // Ajustado para refletir seu atributo 'nomeCliente' na classe Cliente
     private List<String> getClientesNomes() {
         List<String> nomes = new ArrayList<>();
         for (Cliente c : clientes) {
