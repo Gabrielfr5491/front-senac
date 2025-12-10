@@ -1,0 +1,120 @@
+/* Estilo para o fundo da tela de login */
+.root {
+    -fx-background-color: #f4f4f4; /* Cor de fundo clara */
+    -fx-font-family: Arial, sans-serif;
+}
+
+/* Estilo para o VBox que contém os elementos da tela de login */
+.vbox {
+    -fx-spacing: 15; /* Distância entre os elementos */
+    -fx-padding: 20; /* Espaçamento nas bordas */
+    -fx-alignment: center;
+}
+
+/* Estilo para os campos de texto e senha */
+.text-field, .password-field {
+    -fx-padding: 10;
+    -fx-background-color: #ffffff; /* Fundo branco */
+    -fx-border-color: #ddd; /* Cor da borda */
+    -fx-border-radius: 5;
+    -fx-pref-width: 250px;
+    -fx-font-size: 14px;
+}
+
+/* Estilo para os botões */
+.button {
+    -fx-background-color: #4CAF50; /* Cor de fundo verde */
+    -fx-text-fill: white; /* Texto branco */
+    -fx-font-size: 14px;
+    -fx-padding: 10 20; /* Espaçamento interno */
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Cor quando o mouse passa por cima */
+}
+
+/* Estilo para os títulos */
+.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Estilo para a cena geral do menu principal */
+.scene {
+    -fx-background-color: #f4f4f4;
+}
+
+/* Estilo para os botões no menu principal */
+.button {
+    -fx-background-color: #007bff; /* Cor azul */
+    -fx-text-fill: white; /* Texto branco */
+    -fx-font-size: 14px;
+    -fx-pref-width: 250px;
+    -fx-padding: 10 20; /* Espaçamento interno */
+    -fx-border-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3; /* Cor quando o mouse passa por cima */
+}
+
+/* Estilo da ListView (exibindo listas de clientes, funcionários, etc) */
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5;
+    -fx-pref-height: 150px; /* Tamanho da lista */
+    -fx-font-size: 14px;
+}
+
+/* Estilo para os campos de texto (inputs) no menu */
+.text-field {
+    -fx-pref-width: 250px;
+    -fx-padding: 10px;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-border-color: #cccccc;
+}
+
+/* Estilo do fundo do menu */
+.menu {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+}
+
+/* Personalizando a janela de alerta */
+.alert {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+/* Estilo do fundo da cena de menu */
+.border-pane {
+    -fx-background-color: #ffffff;
+}
+
+/* Modificando os campos de texto quando o mouse passa sobre */
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #4CAF50;
+}
+
+/* Estilo de separação entre os botões e outros elementos */
+.separator {
+    -fx-background-color: #cccccc;
+    -fx-padding: 10px;
+}
+
+/* Outros ajustes do layout */
+.root {
+    -fx-padding: 20px;
+}
+
+/* Títulos e outros componentes gerais */
+.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
